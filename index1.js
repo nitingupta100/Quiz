@@ -1,5 +1,7 @@
 function check(e){
-    if (e.srcElement.id===b1){
+
+    if (e.srcElement.id==='b1'){
+        console.log(e.srcElement.id)
 
         var ans = document.querySelector('#a1')
 
@@ -12,7 +14,7 @@ function check(e){
 
     }
 
-    if (e.srcElement.id===b2){
+    if (e.srcElement.id==='b2'){
 
         var ans = document.querySelector('#a2')
 
@@ -25,7 +27,7 @@ function check(e){
 
     }
 
-    if (e.srcElement.id===b3){
+    if (e.srcElement.id==='b3'){
 
         var ans = document.querySelector('#a3')
 

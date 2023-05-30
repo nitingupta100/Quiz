@@ -1,0 +1,17 @@
+h1 {
+    background-color: blueviolet;
+    text-align: center;
+    padding:2rem;
+    margin-bottom: 0px;
+}
+
+#quiz-questions {
+    background-color: aquamarine;
+    padding: 2rem;
+    text-align: center;
+    margin-top: 0px;
+}
+
+#quiz-questions div {
+    padding:0.5rem;
+}

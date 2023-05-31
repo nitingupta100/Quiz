@@ -1,5 +1,5 @@
 var q1 = {
-    q:"what is the capital of Greece ? ",
+    q:"What is the capital of Greece ? ",
     a:"Athens"
 }
 
@@ -26,13 +26,14 @@ function buildQuiz(questions){
     for (var i = 0; i < questions.length; i++){
         
         var j = i + 1
-        quiz.innerHTML = quiz.innerHTML + "<div>" + questions[i].q + "<input id='a"+ j +"'" + "type='text'>" + "<button id='b" + j + "' onclick='check(event)'" + ">Check</button>"  + "</div>"
+        quiz.innerHTML = quiz.innerHTML + "<div>" + "<div class='question' >" + questions[i].q +"</div>" + "<div class='answer' >"+ "<input id='a"+ j +"'" + "type='text'>"+ "</div>" + "<div class='check'>"+"<button id='b" + j + "' onclick='check(event)'" + ">Check</button>"  + "</div>" + "</div>"
         console.log(quiz.innerHTML)
     }
 }
 
 buildQuiz(questions)
 
+var score = 0
 function check(e){
 
     if (e.srcElement.id==='b1'){
@@ -45,6 +46,8 @@ function check(e){
 
         if (ans.value === questions[0].a){
             alert("correct")
+            score = score + 1
+            document.querySelector('h2').innerText = "Score: " + score
         }
         else {
              alert('wrong')
@@ -56,8 +59,11 @@ function check(e){
 
         var ans = document.querySelector('#a2')
 
-        if (ans.value ===questions.q2.a){
+        if (ans.value ===questions[1].a){
             alert("correct")
+            score = score + 1
+            document.querySelector('h2').innerText = "Score: " + score
+
         }
         else {
              alert('wrong')
@@ -69,8 +75,11 @@ function check(e){
 
         var ans = document.querySelector('#a3')
 
-        if (ans.value ===questions.q3.a){
+        if (ans.value ===questions[2].a){
             alert("correct")
+            score = score + 1
+            document.querySelector('h2').innerText = "Score: " + score
+
         }
         else {
              alert('wrong')

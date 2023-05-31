@@ -10,8 +10,35 @@ h1 {
     padding: 2rem;
     text-align: center;
     margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 #quiz-questions div {
     padding:0.5rem;
+    display:flex;
+}
+
+#quiz-questions div div {
+    
+    
+    padding-left: 0px;
+}
+
+h2 {
+    background-color: olivedrab;
+    margin-top:0px;
+    text-align: center;
+}
+
+.question {
+    width:300px;
+}
+
+.answer {
+    width:150px;
+}
+
+.check {
+    margin-left: 20px;
+    width: 100px;
 }

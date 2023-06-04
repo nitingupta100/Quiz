@@ -3,15 +3,18 @@ import Questions from './Components/questions.js';
 
 function App() {
 var data = [{
+    id:1,
     q:"What is the capital of Greece ? ",
     a:"Athens"
 },
 
 {
+    id:2,
     q: "What is the capital of England ? ",
     a:"London"
 },
 {
+    id:3,
     q: "What is the capital of Thailand ? ",
     a: "Bangkok"
 }]
@@ -32,8 +35,11 @@ var data = [{
           Learn React
         </a>
       </header> */}
-      Hello World
-      <Questions data = {data } a="23" ></Questions>
+      <h1>Quiz Time</h1>
+      {
+        data.map((question)=> {return (<Questions key={question.id} ques = {question}  ></Questions>)})
+      }
+      
     </div>
   );
 }

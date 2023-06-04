@@ -1,4 +1,6 @@
 import React from "react"
+import '../App.css';
+
 
 export default function Questions(props){
 
@@ -14,7 +16,7 @@ export default function Questions(props){
     }
 
     return(
-        <div>
+        <div className='question'>
             Q{props.ques.id}
            {props.ques.q}
            <br></br>

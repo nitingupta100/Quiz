@@ -1,3 +1,9 @@
 .App {
   text-align: center;
+  background-color: blueviolet;
+}
+
+.question {
+  background-color: aquamarine;
+  padding: 20px
 }

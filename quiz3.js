@@ -20,7 +20,7 @@ var questions = [q1,q2,q3]
 var currentQuestion = 0;
 var score = 0;
 
- var checkAnswer=()=>{
+var checkAnswer=()=>{
     var answer = document.querySelector('input').value
     emoji = document.getElementById('reaction')
 
@@ -47,7 +47,7 @@ function showQuestion(){
 
     var show_question = document.querySelector('#quiz-questions')
 
-    show_question.innerHTML = "<div> <div>" + question + "</div> <div class='answer'>" + input_answer + "</div> <div class='check'>" + check_answer + reaction +"</div> </div>"
+    show_question.innerHTML = "<div> <div>" + question + "</div><div class='answer'>" + input_answer + "</div> <div class='check primary-button'>" + check_answer + reaction +"</div> </div>"
     console.log(show_question)
 }
 
